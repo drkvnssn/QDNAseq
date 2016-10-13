@@ -80,5 +80,7 @@ setGeneric("probgain<-", function(object, value)
     standardGeneric("probgain<-"))
 setGeneric("probamp<-", function(object, value)
     standardGeneric("probamp<-"))
+setGeneric("adjustBinCount", function(object, method="median", ...)
+  standardGeneric("adjustBinCount"))
 
 # EOF
