@@ -67,7 +67,7 @@ setMethod("adjustBinCount", signature=c(object="QDNAseqReadCounts"),
               } else { 
                 centralTendency <- mean(counts[binSelection,s], na.rm = TRUE)
               }
-              counts[,s] <- counts[,s] + (centralTendency / (used.reads / 1000))
+              counts[,s] <- counts[,s] + (centralTendency / (used.reads / 10))
             }
             new("QDNAseqReadCounts", bins=featureData(object), counts=counts,
                 phenodata=phenoData(object))

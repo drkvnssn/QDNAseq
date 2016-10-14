@@ -38,7 +38,8 @@ setGeneric("segmentBins", function(object, smoothBy=FALSE,
 setGeneric("smoothOutlierBins", function(object,
     logTransform=TRUE, force=FALSE, ...)
     standardGeneric("smoothOutlierBins"))
-
+setGeneric("adjustBinCount", function(object, method="median", ...)
+  standardGeneric("adjustBinCount"))
 
 setGeneric("binsToUse", function(object) standardGeneric("binsToUse"))
 
@@ -48,6 +49,7 @@ setGeneric("bpend", function(object) standardGeneric("bpend"))
 
 setGeneric("counts", function(object) standardGeneric("counts"))
 setGeneric("fit", function(object) standardGeneric("fit"))
+
 setGeneric("copynumber", function(object) standardGeneric("copynumber"))
 setGeneric("segmented", function(object) standardGeneric("segmented"))
 setGeneric("calls", function(object) standardGeneric("calls"))
@@ -64,6 +66,7 @@ setGeneric("counts<-", function(object, value)
     standardGeneric("counts<-"))
 setGeneric("fit<-", function(object, value)
     standardGeneric("fit<-"))
+
 setGeneric("copynumber<-", function(object, value)
     standardGeneric("copynumber<-"))
 setGeneric("segmented<-", function(object, value)
@@ -80,7 +83,6 @@ setGeneric("probgain<-", function(object, value)
     standardGeneric("probgain<-"))
 setGeneric("probamp<-", function(object, value)
     standardGeneric("probamp<-"))
-setGeneric("adjustBinCount", function(object, method="median", ...)
-  standardGeneric("adjustBinCount"))
+
 
 # EOF
